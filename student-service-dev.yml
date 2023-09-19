@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: student-service
+  datasource:
+    url: jdbc:postgresql://localhost:33002/user_db
+    username: rady
+    password: '{cipher}123'
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+token:
+  secret: '{cipher}123'
+server:
+  port: 8081
